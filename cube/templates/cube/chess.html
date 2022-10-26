@@ -1,0 +1,42 @@
+{% extends "cube/base.html"%}
+
+{% load static %}
+{% block content%}
+
+<link rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+      
+<div style="   height: 100%;
+overflow-y: hidden;">
+      <div id="myBoard" class="center center2 noScroll"style="overflow: hidden;width: 100%;max-width:20%;">
+        
+        </div>
+
+    <div class="center">
+
+    <div class="content-section center3 ccc" style="overflow: hidden;color:white; margin-top:25px;margin-bottom: 25px;max-width: 500px;">
+        <center>
+            <div>
+    <button class="btn btn-outline-info " id="reset-btn" onclick="game = moveBack(game)">Back</button>
+    <button class="btn btn-outline-info " id="reset-btn" onclick="newGame()">Restart</button>
+    </div>
+        <label>Game Status:</label>
+        <div id="status"></div>
+        <label>FEN String:</label>
+        <div id="fen"stlye="overflow-wrap: normal;"></div>
+        </center>
+    </div>
+</div>
+</div>
+</div>
+<script  src="https://cdn.jsdelivr.net/gh/nealmick/site@latest/cube/static/cube/chessboard-1.0.0.js"></script>
+<script  src="https://cdn.jsdelivr.net/gh/nealmick/site@second/cube/static/cube/chess.js"></script>
+{% endblock content %}

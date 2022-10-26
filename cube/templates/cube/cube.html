@@ -1,0 +1,35 @@
+
+{% extends "cube/base.html"%}
+
+{% load static %}
+{% block content%}
+<body style="background-color:#383838;" syle="flex: 1; overflow: auto">
+
+<div class="overflow: hidden;">
+
+	<div class="topLeft " style="margin-left:25;margin-top:100px;position:absolute;width: 200px; height: 200px;">
+		<h2 id="cubeStat"style="color:white">cube</h2>
+		<pre><p id="cube"style="color:white;overflow: hidden; height: 400px;">cube</p>	</pre>
+	</div>
+
+			<script  src="https://cdn.jsdelivr.net/gh/nealmick/site/cube/static/cube/cube.js"></script>
+
+		<div class="bottom-left">
+			
+			<button class="btn btn-outline-info" id="shuffle-btn" onclick="shuffle('a')">shuffle</button>
+			<button class="btn btn-outline-info" id="solve-btn" onclick="s()">solve</button>
+
+			<button class="btn btn-outline-info" id="reset-btn" onclick="reset()">reset</button>
+			<button class="btn btn-outline-info" id="back-btn" onclick="back()">back</button>
+			<!--
+			<button class="btn btn-outline-info" id="bigger-btn " onclick="cube=bigger(cube)">bigger</button>
+			<button class="btn btn-outline-info" id="smaller-btn " onclick="cube=smaller(cube)">smaller</button>
+			-->
+
+
+		</div>
+		
+
+
+	</div>
+{% endblock content %}
