@@ -1,0 +1,42 @@
+{% extends "portfolio/base.html"%}
+
+{% load static %}
+
+{% block content%}
+
+    <div id="info"class="container content-section2" style="text-align: left; margin-top: 50px;">
+    
+    <div style="width: 80%;margin-left: 10%;color:white;">
+        <center>
+        <h2 style="text-decoration: underline;color:white">Contact Me <i class="fa fa-envelope"></i></h2>
+        </center>
+        <br>
+        <br>
+
+        <h5 style="color:white">Subject:</h5>
+        <input style="width: 50%;border-radius: 5px;background-color: #404040;color: white;border: 2px solid #737373;"type="text" name="subject" maxlength="100" class="textinput textInput" id="id_subject" value="">
+        <br>
+        <br>
+
+        <h5 style="color:white">Email:</h5>
+        <input style="width: 50%;border-radius: 5px;background-color: #404040;border: 2px solid #737373;color: white;"type="text" name="sender" maxlength="100" class="textinput textInput" id="id_sender" value="">
+        <br>
+        <br>
+        <h5 style="color:white">Message:</h5>
+
+        <textarea style="border-radius: 5px;width: 100%;background-color: #404040;color: white;border: 2px solid #737373;"name="message" cols="30" rows="10" maxlength="1499" class="textarea" id="id_message"></textarea>
+        <br>
+        <h1 ></h1>
+        <center>
+            <h2 id="message-send" style="text-decoration: underline;color:white"></h2>
+            <br>
+        <button style="border-radius: 5px;position: relative; "  id="edit-bug" class="btn btn-outline-info" onclick="send()">Send</button>
+    </center>
+
+    </div>
+    <script  src="{% static 'portfolio/contactForm.js'%}" defer></script>
+
+
+    </div>
+    <div class="homeChess"></div>
+{%endblock%}

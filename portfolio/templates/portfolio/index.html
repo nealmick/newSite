@@ -1,0 +1,571 @@
+
+{% extends "portfolio/base.html"%}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content%}
+
+<link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+                
+
+<div class=""style="position:static;margin-top:25vh;  width: 100%;height: 85vh;">
+    <center>
+        <br>
+        <br>
+        <br>
+
+        <div class="herobox">
+        
+        <p style="font-size: 56px;color: white;text-decoration: underline;margin-bottom: 2px">Full Stack Developer</p>
+        <p style="font-size: 30px;color: white;margin-bottom: 2px;">Python Java JavaScript HTML CSS</h3>
+        <h3 style="color: white"><a style="position: relative; text-decoration: underline;"  href='/contact/'>Hire me</a> or take a look below↓</p>
+    </div>
+</center>
+</div>
+<div id="myEl"style="overflow:hidden;position: absolute;width: 200%;height: 100%;z-index:-1000; opacity: 0.09;bottom:500px;">
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<center><h1 style="text-decoration: underline;">Portfolio</h1></center>
+
+
+<div class="row justify-content-md-center"style="padding:0px;">
+    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+        <div id="flip-card"class="flip-card">
+            <div class="flip-card-front">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white;">Classifier<i style="font-size: 0.8em;"class="fa fa-solid fa-feather"></i></h2>
+                    <br>
+                    <div id="table" class="nc"style="margin-left: auto;margin-right: auto;height: 225px;width:225px; "></div>
+                    <div style="margin-top: 50px;">
+                        <hr>
+                        <p style="padding-left:25px;padding-right:25px;">Neural network classifies drawn numbers as integer values 0-9. </p>
+                        <a href="/nc/" class="btn btn-outline-info">Live <i class="fa fa-solid fa-feather"></i></a>
+                        <button id="flip-card-btn-turn-to-back"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
+
+                        <a href="https://github.com/nealmick/NumberClassifier" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card-back">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">Classifier<i style="font-size: 0.8em;"class="fa fa-solid fa-feather"></i></h2>
+
+                </div>
+
+                <div style="margin-top: 15px;position: absolute;">
+                    <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
+                      
+                        Each drawing is represented as a 28 x 28 grid.  The neural network is made up of 2 fully connected layers using the rectified linear unit activation function.  The output layer is 10 softmax values representing the targets 0-9.  The model was built with PyTorch and trained on over 60,00 examples from the MNIST dataset.                    
+                      
+                    </p>
+                </div>
+
+                <div style="margin-top: 350px;">
+
+                    <button id="flip-card-btn-turn-to-front"class="btn btn-outline-info">Flip <i class="fa fa-solid fa-share"></i></button>
+
+                </div>
+
+ 
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+
+        <div id="flip-card2"class="flip-card">
+            <div class="flip-card-front">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">Bug Tracker <i style="font-size: 0.8em;"class="fa fa-solid fa-bug"></i></h2>
+                    <br>
+        
+                    <img src="{% static 'portfolio/test5.png'%}" style="margin-left: auto;margin-right: auto;height: 225px;width:300px; ">
+
+
+                    <div style="margin-top: 50px;">
+                        <hr>
+                        <p style="padding-left:25px;padding-right:25px;">
+                            Track Bugs from their First sightings, to their inevitable demise.
+                        </p>
+                        <a href="http://njm.rocks:8002/u/login/" target="_blank" class="btn btn-outline-info"> Live <i class="fa fa-solid fa-bug"></i></a>
+                        <button id="flip-card-btn-turn-to-back2"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
+                        <a href="https://github.com/nealmick/BugTracker" target="_blank" class="btn btn-outline-info"> GitHub <i class="fab fa-github"></i></a>
+                       
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card-back">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">Bug Tracker <i style="font-size: 0.8em;"class="fa fa-solid fa-bug"></i></h2>
+
+
+                </div>
+
+                <div style="margin-top: 15px;position: absolute;">
+                    <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
+
+                        The web app was built with the Django library using a MVC design architecture.  Each user has a profile which stores bug statistics, as well as other information such as profile pictures. The main view is ordered by date and paginated by a list of the user's bugs.  Each bug has a severity rating, title, description, date, and status.  New bugs are created with a form and can be edited later.  The project includes user creation, login, and password reset.
+                
+
+                    </p>
+                </div>
+
+                <div style="margin-top: 350px;">
+
+                    <button id="flip-card-btn-turn-to-front2"class="btn btn-outline-info">Flip <i class="fa fa-solid fa-share"></i></button>
+                    
+                </div>
+
+ 
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-md-center"style="padding:0px;">
+    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+        <div id="flip-card3"class="flip-card">
+            <div class="flip-card-front">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">TicTacToe <i style="font-size: 0.8em;"class="fa fa-solid fa-hashtag"></i></h2>
+                    <br>
+                    <div class="board asdf" id="board" style="margin-left: auto;margin-right: auto;height: 225px;width:225px; ">
+                      <div class="cell" id='box1' data-cell  onclick="box1()"></div>
+                      <div class="cell" id='box2' data-cell onclick="box2()"></div>
+                      <div class="cell" id='box3' data-cell onclick="box3()"></div>
+                      <div class="cell" id='box4' data-cell onclick="box4()"></div>
+                      <div class="cell" id='box5' data-cell onclick="box5()"></div>
+                      <div class="cell" id='box6' data-cell onclick="box6()"></div>
+                      <div class="cell" id='box7' data-cell onclick="box7()"></div>
+                      <div class="cell" id='box8' data-cell onclick="box8()"></div>
+                      <div class="cell" id='box9' data-cell onclick="box9()"></div>
+                    </div>
+                    <div style="margin-top: 50px;">
+                        <hr>
+                        <p style="padding-left:25px;padding-right:25px;">But you never win, checks all possible board states, and might beat you.</p>
+                        <a href="/tictactoe/" class="btn btn-outline-info">Live <i class="fa fa-solid fa-hashtag"></i></a>
+
+                        <button id="flip-card-btn-turn-to-back3"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
+
+                        <a href="https://github.com/nealmick/NumberClassifier" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card-back">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">TicTacToe <i style="font-size: 0.8em;"class="fa fa-solid fa-hashtag"></i></h2>
+
+                </div>
+
+                <div style="margin-top: 15px;position: absolute;">
+                    <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
+                      
+
+                        The board state is stored using a 3 x 3 array. The algorithm traverses and evaluates a tree structure which contains every possible board state. The root of the tree is the current game state and each branch is a possible move.  Branches terminate when there is a winner or a tie. Terminal branches are then compared to the best found so far and updated.The algorithm will always tie, or win, never lose.
+
+                    </p>
+                </div>
+
+                <div style="margin-top: 350px;">
+
+                    <button id="flip-card-btn-turn-to-front3"class="btn btn-outline-info">Flip <i class="fa fa-solid fa-share"></i></button>
+
+                </div>
+
+ 
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    
+    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+
+        <div id="flip-card4"class="flip-card">
+            <div class="flip-card-front">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">NBA <i style="font-size: 0.8em;"class="fa fa-basketball-ball"></i></h2>
+                  
+                    <br>
+    
+                    <img src="{% static 'portfolio/test4.png'%}" style="margin-left: auto;margin-right: auto;height: 225px;width:300px; ">
+
+
+
+
+                    <div style="margin-top: 50px;">
+                        <hr>
+                        <p style="padding-left:25px;padding-right:25px;">
+                            Neural Network predicts NBA game winners by player stats.
+                        </p>
+
+                        <a href="http://njm.rocks:8000/login/" target="_blank" class="btn btn-outline-info"> Live <i class="fa fa-basketball-ball"></i></a>
+                        <button id="flip-card-btn-turn-to-back4"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
+                        <a href="https://github.com/nealmick/bb/" target="_blank" class="btn btn-outline-info"> GitHub <i class="fab fa-github"></i></a>
+
+
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card-back">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">NBA <i style="font-size: 0.8em;"class="fa fa-basketball-ball"></i></h2>
+
+
+                </div>
+
+                <div style="margin-top: 15px;position: absolute;">
+                    <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
+                        The model is trained on over 19,000 games from the past 2 decades.  Every game is input 102 total data points using various stats from the best players such as three point shooting percentage.  The neural network is written in Python and uses Tensorflow to construct a sequential series of 3 layers.  The first two layers are made up of 300 dense neurons.  The last output layer is a Sigmoid function ranging from the home to the visitor team winning.  The model is controlled by a Django web app, which includes prediction stats, today's games and more.
+
+                    </p>
+                </div>
+
+                <div style="margin-top: 350px;">
+                    <button id="flip-card-btn-turn-to-front4"class="btn btn-outline-info">Flip <i class="fa fa-solid fa-share"></i></button>
+                    
+                    
+                </div>
+ 
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-md-center"style="padding:0px;">
+    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+        <div id="flip-card5"class="flip-card">
+            <div class="flip-card-front">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">Chess Bot <i style="font-size: 0.8em;"class="fa fa-chess-board"></i></h2>
+                     
+                    <br>
+
+                    <div id="myBoard" class=""style="margin-left: auto;margin-right: auto;height: 225px;width:250px;">
+                    </div>
+                    <div style="margin-top: 50px;">
+                        <hr>
+                        <p style="padding-left:25px;padding-right:25px;">
+                            Evaluates any position in seconds, with ratings over 2,000 ELO.
+                        </p>
+                        <a href="/chess/" class="btn btn-outline-info"> Live <i class="fa fa-chess-board"></i></a>
+                        <button id="flip-card-btn-turn-to-back5"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
+                        <a href="https://github.com/nealmick/NumberClassifier" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card-back">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">Chess Bot <i style="font-size: 0.8em;"class="fa fa-chess-board"></i></h2>
+
+                </div>
+
+                <div style="margin-top: 15px;position: absolute;">
+                    <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
+                      
+                        There are more chess positions than atoms in the known universe(10^111). Evaluation of a position is done by generating a tree structure that contains every possible board state to a certain depth. The root of the tree is the current game state and each branch is a possible move.  Branches terminate when at the max search depth, or if the branch score drops too low.  Each branch score is calculated by the value of the piece’s in addition to their locations.  This engine is a fork of the Sunfish engine.                  </p>
+                     
+                    </p>
+                </div>
+
+                <div style="margin-top: 350px;">
+                    <button id="flip-card-btn-turn-to-front5"class="btn btn-outline-info">Flip <i class="fa fa-solid fa-share"></i></button>
+
+                </div>
+
+ 
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+
+        <div id="flip-card6"class="flip-card">
+            <div class="flip-card-front">
+                <div style="margin-top: 25px;">
+                    
+                    <h2 style="text-decoration: underline;color:white">Cube <i style="font-size: 0.8em;"class="fa fa-cube"></i></h2>
+
+                    <br>
+        
+
+                    <div id="myEl2"style="overflow:hidden;position: relative;margin-bottom: 25px;width: 100%;height: 225px;z-index:-1000; opacity: 0.9;"></div>
+
+                    <div style="margin-top: 50px;">
+                        <hr>
+                        <p style="padding-left:25px;padding-right:25px;">
+                            Solves itself instantly and is rendered in-browser with intuitive controls.
+                        </p>
+                        <a href="/cube/" class="btn btn-outline-info">Live <i class="fa fa-cube"></i></a>
+                        <button id="flip-card-btn-turn-to-back6"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
+                        <a href="https://github.com/nealmick/cube" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
+                       
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card-back">
+                <div style="margin-top: 25px;">
+                    <h2 style="text-decoration: underline;color:white">Cube <i style="font-size: 0.8em;"class="fa fa-cube"></i></h2>
+
+
+
+                </div>
+
+                <div style="margin-top: 15px;position: absolute;">
+                    <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
+
+                        The cube has more states than grains of sand on all of earth's beaches (10^40).  Solving is completed in stages; the top cross, then top corners, and so on...only one piece is solved at a time. First the piece is located and based on the piece's location the algorithm begins to move toward a solved state.  The state is stored using a 6 x 3 x 3 array and is rendered using TheeJS.
+
+
+                    </p>
+                </div>
+
+                <div style="margin-top: 350px;">
+                    <button id="flip-card-btn-turn-to-front6"class="btn btn-outline-info">Flip <i class="fa fa-solid fa-share"></i></button>
+
+                    
+                </div>
+
+ 
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="info"class="content-section2" style="position: relative; width:90%;text-align: left; margin-top: 159px;  margin-right: auto;margin-left: auto;">
+
+
+    <center>
+      <h2 style="text-decoration: underline;color:white">Information Systems Experience</h2>
+    </center>  
+    
+
+    
+      <p style="color:white">					    
+         • Written thousands of lines of Python and JavaScript. Proficient in Java, C, HTML, CSS, and Bash.
+      </p>
+      <p style="color:white">					    
+        • Experienced with libraries such as Django, Tensorflow, NumPy, PyTorch, Flask, Pickle and many more.
+        </p>
+      <p style="color:white">					    
+         • Worked Extensively with Linux distributions such as Ubuntu, Arch, and Kali OS, run on servers from Digital Ocean, AWS, and Google Cloud Platform.
+      </p>
+    </div>
+    <br>
+    <br>
+    
+    <div id="info"class="container content-section2" style="width:91%;text-align: left; margin-top: 75px;  margin-right: auto;margin-left: auto;">
+    
+      
+        <center>
+        <h2 style="text-decoration: underline;color:white">Education</h2>
+      </center>
+    
+        <p style="color:white">
+            • Information Systems, specialization in Cyber Security, Piedmont Virginia Community College, 2019 - Present
+        </p>        
+        <p style="color:white">
+            • Pertinent courses include; Computer Science, Client Side Scripting, TCP/IP Networking, Computer Forensics, Network Security, Windows and Linux Server Administration, Java, C, and Python classes.
+        </p>
+        <p style="color:white">
+            • Internship, McIntire School of Commerce, University of Virginia.
+        </p>
+    </div>
+    <br>
+    <br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="info"class="container content-section2" style="text-align: left; margin-top: 50px;width: 90%;margin-left: 5%;">
+    
+        <div style="width: 80%;margin-left: 10%;color:white;">
+            <center>
+            <h2 style="text-decoration: underline;color:white">Contact Me <i class="fa fa-envelope"></i></h2>
+            </center>
+            <br>
+            <br>
+    
+            <h5 style="color:white">Subject:</h5>
+            <input style="width: 50%;border-radius: 5px;background-color: #404040;color: white;border: 2px solid #737373;"type="text" name="subject" maxlength="100" class="textinput textInput" id="id_subject" value="">
+            <br>
+            <br>
+    
+            <h5 style="color:white">Email:</h5>
+            <input style="width: 50%;border-radius: 5px;background-color: #404040;border: 2px solid #737373;color: white;"type="text" name="sender" maxlength="100" class="textinput textInput" id="id_sender" value="">
+            <br>
+            <br>
+            <h5 style="color:white">Message:</h5>
+    
+            <textarea style="border-radius: 5px;width: 100%;background-color: #404040;color: white;border: 2px solid #737373;"name="message" cols="30" rows="10" maxlength="1499" class="textarea" id="id_message"></textarea>
+            <br>
+            <h1 ></h1>
+            <center>
+                <h2 id="message-send" style="text-decoration: underline;color:white"></h2>
+                <br>
+            <button style="border-radius: 5px;position: relative; "  id="edit-bug" class="btn btn-outline-info" onclick="send()">Send</button>
+        </center>
+    
+        </div>
+        <script  src="{% static 'portfolio/contactForm.js'%}" defer></script>
+    
+    
+        </div>
+    
+    
+      <br>
+      <br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <div id="info" class="content-section2"style="width:90%;text-align: left; margin-top: 75px;  margin-right: auto;margin-left: auto;">
+        <center>
+          <h2 style="color:white;text-decoration: underline;" >More projects coming soon!</h2>
+              <!--
+              <a href="{% url 'resume' %}" class="btn btn-outline-info"><i class="far fa-address-card"></i></a>
+      
+              <a href="https://docs.google.com/document/d/1VmPo1DhGabotE-iPHQo4Smfxps2xDJPFB1t4InSt5jY/edit?usp=sharing" class="btn btn-outline-info"><i class="fas fa-download"></i></a>
+              -->
+              <sp>
+                  <p> </p>
+              </sp>
+              <a href="{% url 'resume' %}" class="btn btn-outline-info"><i class="far fa-address-card"></i></a>
+              <a href="/nc/" class="btn btn-outline-info"><i class="fa fa-solid fa-feather"></i></a>
+      
+              <a href="{% url 'cube' %}" class="btn btn-outline-info"><i class="fa fa-cube"></i></a>
+              <a href="/tictactoe/" class="btn btn-outline-info"><i class="fa fa-solid fa-hashtag"></i></a>
+              <a href="http://njm.rocks:8000/login/" target="_blank" class="btn btn-outline-info"><i class="fa fa-basketball-ball"></i></a>
+      
+              <a href="{% url 'chess' %}" class="btn btn-outline-info"><i class="fa fa-chess-board"></i></a>
+              <a href="http://njm.rocks:8002/u/login/" class="btn btn-outline-info"><i class="fa fa-solid fa-bug"></i></a>
+      
+      
+              <a href="https://github.com/nealmick" target="_blank" class="btn btn-outline-info"><i class="fab fa-github"></i></a>
+            </center>
+        </div>
+        <div class="" style="margin-top: 150px;"></div>
+        <script  src="{% static 'portfolio/contactForm.js'%}" defer></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  src="https://cdn.jsdelivr.net/gh/nealmick/site@latest/cube/static/cube/chessboard-1.0.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+
+
+<script  src="{% static 'portfolio/chess.js'%}"></script>
+<script  src="{% static 'portfolio/contactForm.js'%}"></script>
+<script  src="{% static 'portfolio/cube.js'%}"></script>
+<script  src="{% static 'portfolio/f.js'%}"></script>
+<script  src="{% static 'portfolio/ncIndex.js'%}"></script>
+
+{% endblock content %}

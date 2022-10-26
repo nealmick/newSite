@@ -1,0 +1,43 @@
+{% extends "portfolio/base.html"%}
+
+{% load static %}
+{% block content%}
+
+
+{% load static %}
+<div class="container"style="">
+
+    <center>
+    
+        <title>TicTacToe</title>
+    
+    <h1 id='winner' style="  
+    color: #17a2b8;
+    font-size: 75px;
+    font-family: sans-serif;">TicTacToe!</h1>
+    </center>
+</div>
+
+        <div class="board2 asdf2" id="board" style="">
+            <div class="cell2" id='box1' data-cell  onclick="box1()"></div>
+            <div class="cell2" id='box2' data-cell onclick="box2()"></div>
+            <div class="cell2" id='box3' data-cell onclick="box3()"></div>
+            <div class="cell2" id='box4' data-cell onclick="box4()"></div>
+            <div class="cell2" id='box5' data-cell onclick="box5()"></div>
+            <div class="cell2" id='box6' data-cell onclick="box6()"></div>
+            <div class="cell2" id='box7' data-cell onclick="box7()"></div>
+            <div class="cell2" id='box8' data-cell onclick="box8()"></div>
+            <div class="cell2" id='box9' data-cell onclick="box9()"></div>
+        </div>
+
+
+        <div class="bottom-left2">
+            <button class="btn btn-outline-info " id="reset-btn" onclick="restart()">Restart</button>
+
+        </div>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </div>
+{% endblock content %}
