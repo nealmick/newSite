@@ -13,21 +13,24 @@
       integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
       crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
-      
-<div style="   height: 100%;
-overflow-y: hidden;">
-      <div id="myBoard" class="center center2 noScroll"style="overflow: hidden;width: 100%;max-width:20%;">
+    
+
+
+
+    <div class="zoomParticle"style="opacity:.07;z-index:-10000"></div>
+</div>
+</div>
+<div class="col-md-6  "style="margin-top:10vh;margin-left:auto;margin-right:auto;width:100%;">
+      <div id="myBoard" class="noScroll center "style="height:50vh;width:100%;max-width:500px;">
         
         </div>
 
-    <div class="center">
 
-    <div class="content-section center3 ccc" style="overflow: hidden;color:white; margin-top:25px;margin-bottom: 25px;max-width: 500px;">
+    <div class="content-section2 center" style="position:relative;color:white; margin-top:25px; height: 30vh;min-width: 300px;">
         <center>
-            <div>
-    <button class="btn btn-outline-info " id="reset-btn" onclick="game = moveBack(game)">Back</button>
-    <button class="btn btn-outline-info " id="reset-btn" onclick="newGame()">Restart</button>
-    </div>
+        <button class="btn btn-outline-info " id="reset-btn" onclick="game = moveBack(game)">Back</button>
+        <button class="btn btn-outline-info " id="reset-btn" onclick="newGame()">Restart</button>
+        <br>
         <label>Game Status:</label>
         <div id="status"></div>
         <label>FEN String:</label>

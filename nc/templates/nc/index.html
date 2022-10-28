@@ -3,28 +3,39 @@
 
 {% load static %}
 {% block content%}
-		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- icons -->
-        <link href="{% static 'nc/style.css'%}" rel="stylesheet">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- icons -->
+<link href="{% static 'portfolio/style.css'%}" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="zoomParticle"style="opacity:.04;z-index:-10000"></div>
 
-    <div class="container" style="width:70%">
-	<body style="background-color:#383838;  ">
+
+
+</div>
     <title>Number Classifier!</title>
-        <div classs=" center"style="margin-top:75px;color: white;">
+        <div class="col-md-6"style="color: white;margin-left: auto;margin-right:auto;">
             <center>
             <h1 id="num" >
             Number Classifier! <i style="font-size: 0.8em; color:#17a2b8" class="fa fa-solid fa-feather"></i>
             </h1>
-        </center>
-        <div id="table" style="height: 100%;width: 100%;"></div>
-        <center>
+            <div id="table" class=""style="height: 100%;"></div>
+            <div id="loading">Draw a number!</div>
+            <div class="wavee"id="loadingIcon">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+              </div>
+            <br>
             <button class="btn btn-outline-info " id="reset-btn" onclick="restart()">Reset!</button>
             <button class="btn btn-outline-info " id="reset-btn" onclick="getNumber(number,res,myChart)">Classify!</button>
             <div style="height: 100%;width: 100%;max-width: 450px;">
@@ -36,19 +47,6 @@
 
         </div>
     </div>
-</center>
-    </body>
-    <!--
-    <div style="color: white;">
-        <center>
-
-            <h4 id="res">
-
-            </h4>
-        </center>
-    </div>
-    -->
-
 
 
     <script  src="{% static 'nc/nc.js'%}"></script>

@@ -242,6 +242,10 @@ function restart(){
   }
 
 function prepareSend(g){
+
+
+    document.getElementById("loadingIcon").style.opacity = 1;
+
     let s = "";
     printGrid()
     for(foo=0;foo<ncx;foo+=1){
@@ -267,6 +271,8 @@ function getNumber(number,res,myChart){
             asdf: prepareSend(g),
             },
             success: function(asdf) {
+            document.getElementById("loadingIcon").style.opacity = 0;
+            
             number = asdf.asdf
             res = asdf.fdsa
             //document.getElementById("num").innerText = 'Number is: '+number

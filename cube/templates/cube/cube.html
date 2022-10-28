@@ -3,24 +3,29 @@
 
 {% load static %}
 {% block content%}
-<body style="background-color:#262626;" syle="flex: 1; overflow: auto">
+<div class="zoomParticle"style="opacity:.07;z-index:-10000"></div>
 
-<div class="overflow: hidden;">
+<body style="background-color:#303030;" syle="flex: 1; overflow: auto">
 
-	<div class="topLeft " style="margin-left:25;margin-top:100px;position:absolute;width: 200px; height: 200px;">
-		<h2 id="cubeStat"style="color:white">cube</h2>
+<div class="overflow: hidden; ">
+
+	<div class="topLeft " style="margin-left:25;position:absolute;width: 200px; height: 200px;">
 		<pre><p id="cube"style="color:white;overflow: hidden; height: 400px;">cube</p>	</pre>
 	</div>
 
-			<script  src="https://cdn.jsdelivr.net/gh/nealmick/site/cube/static/cube/cube.js"></script>
 
 		<div class="bottom-left">
-			
+			<div class="slidecontainer"style="white-space: nowrap;"">
+				<p id="speedI">Solve Time:</p>
+				<input type="range" min="1" max="100" value="10" class="slider" id="myRange">
+			</div>
+			<div style="margin-top:10px"></div>
 			<button class="btn btn-outline-info" id="shuffle-btn" onclick="shuffle('a')">shuffle</button>
 			<button class="btn btn-outline-info" id="solve-btn" onclick="s()">solve</button>
 
 			<button class="btn btn-outline-info" id="reset-btn" onclick="reset()">reset</button>
 			<button class="btn btn-outline-info" id="back-btn" onclick="back()">back</button>
+
 			<!--
 			<button class="btn btn-outline-info" id="bigger-btn " onclick="cube=bigger(cube)">bigger</button>
 			<button class="btn btn-outline-info" id="smaller-btn " onclick="cube=smaller(cube)">smaller</button>
@@ -33,5 +38,9 @@
 
 	</div>
 
-	
+</div>
+
+
+<script  src="{% static 'cube/cube.js'%}"></script>
+
 {% endblock content %}

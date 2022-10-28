@@ -15,11 +15,11 @@ let cubeGap = .2
 let delay= 1
 let shuffleDelay= 5
 let solveDelayStep=3
-let solveDelay = .11
+let solveDelay = .0001
 let moveCount = 0
 let history = []
 let shuffleCount = 50
-let sceneRotationSpeed = 10
+let sceneRotationSpeed = .15
 
 let loop = true
 
@@ -31,6 +31,19 @@ printCube(cube)
 
 //three
 init();
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  console.log(this.value)
+  document.getElementById("speedI").innerText=this.value/10;
+  solveDelay = this.value/100
+}
+
+
 
 looopdydoopdydoo = false
 if(looopdydoopdydoo){
@@ -2169,7 +2182,7 @@ function createCube(faces, x,y){
 
 	stat = ('x: '+x+'  y: '+y)
 	//console.log(stat)
-	document.getElementById("cubestat").innerText = stat
+	//document.getElementById("cubestat").innerText = stat
 
 
 	let cube = [];
