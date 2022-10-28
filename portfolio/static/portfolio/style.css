@@ -1,25 +1,99 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoomParticle{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  width: 2px;
+  background-color: #2AA2B8;
+  border-radius: 50%;
+  box-shadow: -24vw -44vh 2px 2px #2AA2B8,38vw -4vh 0px 0px #2AA2B8,-20vw -48vh 1px 2px #2AA2B8,-39vw 38vh 3px 1px #2AA2B8,-42vw -11vh 0px 3px #2AA2B8,
+  12vw 15vh 3px 3px #2AA2B8,42vw 6vh 3px 2px #2AA2B8,-8vw 9vh 0px 2px #2AA2B8,34vw -38vh 1px 0px #2AA2B8,-17vw 45vh 3px 1px #2AA2B8,22vw -36vh 3px 2px #2AA2B8,
+  -42vw 1vh 1px 0px #2AA2B8,10vw -3vh 2px 2px #2AA2B8,6vw 21vh 1px 0px #2AA2B8,2vw 7vh 3px 0px #2AA2B8,-10vw -50vh 3px 2px #2AA2B8,24vw -2vh 3px 2px #2AA2B8,
+  -42vw 31vh 3px 3px #2AA2B8,-46vw 9vh 2px 1px #2AA2B8,-1vw 3vh 3px 1px #2AA2B8,-30vw -43vh 0px 0px #2AA2B8,48vw -15vh 0px 1px #2AA2B8,-31vw -18vh 1px 2px #2AA2B8,
+  38vw 40vh 0px 1px #2AA2B8,-16vw -42vh 3px 2px #2AA2B8,31vw -49vh 3px 3px #2AA2B8,35vw 22vh 0px 0px #2AA2B8,-13vw -15vh 1px 3px #2AA2B8,5vw 48vh 1px 1px #2AA2B8,
+  -31vw 36vh 3px 0px #2AA2B8,37vw 38vh 0px 2px #2AA2B8,24vw -44vh 2px 1px #2AA2B8,50vw -12vh 3px 3px #2AA2B8,-41vw -33vh 3px 1px #2AA2B8,-24vw -46vh 2px 2px #2AA2B8,
+  42vw 15vh 1px 2px #2AA2B8,29vw 40vh 2px 1px #2AA2B8,47vw -27vh 3px 1px #2AA2B8,-22vw 19vh 1px 0px #2AA2B8,29vw -34vh 0px 1px #2AA2B8,27vw 20vh 2px 2px #2AA2B8,
+  21vw -3vh 3px 0px #2AA2B8,34vw 17vh 1px 2px #2AA2B8,-45vw -44vh 0px 1px #2AA2B8,44vw -47vh 3px 2px #2AA2B8,-29vw 11vh 2px 0px #2AA2B8,44vw -9vh 1px 1px #2AA2B8,
+  36vw -28vh 2px 3px #2AA2B8,0vw -33vh 0px 2px #2AA2B8,-12vw 1vh 2px 3px #2AA2B8,-14vw 44vh 0px 0px #2AA2B8,16vw 45vh 0px 3px #2AA2B8,10vw 6vh 1px 2px #2AA2B8,
+  -45vw -39vh 1px 0px #2AA2B8,7vw -19vh 3px 2px #2AA2B8,-8vw 0vh 1px 3px #2AA2B8,-20vw 39vh 2px 3px #2AA2B8,10vw 14vh 3px 1px #2AA2B8,43vw 35vh 2px 1px #2AA2B8,
+  -10vw -35vh 0px 1px #2AA2B8,-41vw -11vh 2px 3px #2AA2B8,49vw 42vh 3px 0px #2AA2B8,-21vw -37vh 1px 3px #2AA2B8,-14vw 24vh 1px 0px #2AA2B8,35vw 41vh 3px 1px #2AA2B8,
+  -33vw 48vh 3px 3px #2AA2B8,-19vw -35vh 3px 1px #2AA2B8,-34vw -11vh 0px 3px #2AA2B8,-47vw 40vh 0px 1px #2AA2B8,28vw 9vh 2px 2px #2AA2B8,-10vw 37vh 3px 2px #2AA2B8,
+  42vw 15vh 1px 2px #2AA2B8,29vw 40vh 2px 1px #2AA2B8,47vw -27vh 3px 1px #2AA2B8,-22vw 19vh 1px 0px #2AA2B8,29vw -34vh 0px 1px #2AA2B8,27vw 20vh 2px 2px #2AA2B8,
+  21vw -3vh 3px 0px #2AA2B8,34vw 17vh 1px 2px #2AA2B8,-45vw -44vh 0px 1px #2AA2B8,44vw -47vh 3px 2px #2AA2B8,-29vw 11vh 2px 0px #2AA2B8,44vw -9vh 1px 1px #2AA2B8,
+  36vw -28vh 2px 3px #2AA2B8,0vw -33vh 0px 2px #2AA2B8,-12vw 1vh 2px 3px #2AA2B8,-14vw 44vh 0px 0px #2AA2B8,16vw 45vh 0px 3px #2AA2B8,10vw 6vh 1px 2px #2AA2B8,
+  -45vw -39vh 1px 0px #2AA2B8,7vw -19vh 3px 2px #2AA2B8,-8vw 0vh 1px 3px #2AA2B8,-20vw 39vh 2px 3px #2AA2B8,10vw 14vh 3px 1px #2AA2B8,43vw 35vh 2px 1px #2AA2B8,
+  -10vw -35vh 0px 1px #2AA2B8,-41vw -11vh 2px 3px #2AA2B8,49vw 42vh 3px 0px #2AA2B8,-21vw -37vh 1px 3px #2AA2B8,-14vw 24vh 1px 0px #2AA2B8,35vw 41vh 3px 1px #2AA2B8,
+  -33vw 48vh 3px 3px #2AA2B8,-19vw -35vh 3px 1px #2AA2B8,-34vw -11vh 0px 3px #2AA2B8,-47vw 40vh 0px 1px #2AA2B8,28vw 9vh 2px 2px #2AA2B8,-10vw 37vh 3px 2px #2AA2B8,
+  23vw -33vh 1px 3px #2AA2B8,-25vw -43vh 0px 0px #2AA2B8,-34vw -39vh 0px 2px #2AA2B8,-23vw 18vh 0px 0px #2AA2B8,1vw 2vh 3px 2px #2AA2B8,-43vw 30vh 2px 3px #2AA2B8,45vw 32vh 2px 3px #2AA2B8,-9vw -13vh 0px 1px #2AA2B8,41vw -10vh 3px 0px #2AA2B8,5vw -2vh 1px 3px #2AA2B8,-48vw 39vh 1px 2px #2AA2B8,-48vw 36vh 2px 0px #2AA2B8,8vw 44vh 1px 0px #2AA2B8,-22vw -1vh 3px 0px #2AA2B8,0vw 20vh 1px 0px #2AA2B8,4vw -47vh 2px 3px #2AA2B8,-50vw 22vh 1px 3px #2AA2B8,38vw -14vh 0px 1px #2AA2B8,-16vw -4vh 3px 1px #2AA2B8,-25vw 29vh 3px 0px #2AA2B8,-19vw -20vh 0px 0px #2AA2B8,23vw -7vh 1px 2px #2AA2B8,33vw -8vh 1px 2px #2AA2B8,-12vw -34vh 3px 1px #2AA2B8,-37vw 33vh 0px 1px #2AA2B8,44vw 17vh 1px 3px #2AA2B8,-40vw 24vh 3px 3px #2AA2B8,18vw 28vh 3px 1px #2AA2B8,28vw 10vh 2px 0px #2AA2B8,-28vw -17vh 2px 0px #2AA2B8,50vw -13vh 2px 3px #2AA2B8,21vw -10vh 3px 2px #2AA2B8,23vw -22vh 0px 1px #2AA2B8,46vw 39vh 0px 1px #2AA2B8,14vw -9vh 3px 3px #2AA2B8,42vw -39vh 1px 2px #2AA2B8,32vw -12vh 0px 3px #2AA2B8,-31vw 41vh 0px 2px #2AA2B8,12vw -32vh 3px 3px #2AA2B8,23vw -48vh 2px 2px #2AA2B8,9vw 9vh 0px 0px #2AA2B8,27vw -9vh 2px 1px #2AA2B8,3vw -7vh 3px 2px #2AA2B8,8vw -26vh 1px 2px #2AA2B8,18vw -28vh 0px 3px #2AA2B8,-47vw -15vh 3px 1px #2AA2B8,44vw 14vh 3px 1px #2AA2B8,44vw 47vh 3px 2px #2AA2B8,33vw 5vh 3px 1px #2AA2B8,-40vw -37vh 1px 0px #2AA2B8,-33vw -39vh 0px 1px #2AA2B8,32vw -27vh 1px 0px #2AA2B8,26vw 30vh 2px 1px #2AA2B8,-19vw 4vh 0px 0px #2AA2B8,-4vw 29vh 0px 1px #2AA2B8,35vw -15vh 0px 1px #2AA2B8,35vw 12vh 0px 2px #2AA2B8,-11vw -48vh 0px 3px #2AA2B8,46vw -17vh 0px 2px #2AA2B8,25vw -27vh 1px 2px #2AA2B8,-41vw -45vh 0px 2px #2AA2B8,-3vw 23vh 0px 1px #2AA2B8,13vw -16vh 1px 0px #2AA2B8,23vw 38vh 2px 3px #2AA2B8,22vw -3vh 2px 2px #2AA2B8,-36vw -40vh 2px 1px #2AA2B8,-28vw -48vh 1px 3px #2AA2B8,42vw 19vh 0px 0px #2AA2B8,43vw -5vh 2px 3px #2AA2B8,50vw 23vh 0px 1px #2AA2B8,48vw 9vh 1px 2px #2AA2B8,-26vw -50vh 1px 1px #2AA2B8,3vw -45vh 2px 2px #2AA2B8,-2vw 32vh 3px 3px #2AA2B8,-3vw -14vh 0px 1px #2AA2B8,41vw 47vh 1px 0px #2AA2B8,31vw -21vh 2px 2px #2AA2B8,-16vw 5vh 2px 1px #2AA2B8,-16vw 1vh 0px 3px #2AA2B8,-16vw 36vh 2px 1px #2AA2B8,32vw 25vh 2px 0px #2AA2B8,19vw -50vh 0px 2px #2AA2B8,-48vw 33vh 0px 1px #2AA2B8,-26vw -25vh 3px 0px #2AA2B8,11vw 4vh 0px 3px #2AA2B8,12vw -13vh 2px 2px #2AA2B8,38vw 39vh 1px 0px #2AA2B8,-15vw -18vh 0px 3px #2AA2B8,40vw 14vh 3px 0px #2AA2B8,47vw -49vh 3px 2px #2AA2B8,36vw 14vh 3px 1px #2AA2B8,46vw -39vh 1px 2px #2AA2B8,-18vw -13vh 0px 0px #2AA2B8,-48vw 31vh 3px 1px #2AA2B8,-44vw -16vh 0px 3px #2AA2B8,9vw 17vh 0px 1px #2AA2B8,28vw 45vh 3px 0px #2AA2B8,27vw -32vh 0px 2px #2AA2B8,15vw 22vh 3px 2px #2AA2B8,
+  42vw 15vh 1px 2px #2AA2B8,29vw 40vh 2px 1px #2AA2B8,47vw -27vh 3px 1px #2AA2B8,-22vw 19vh 1px 0px #2AA2B8,29vw -34vh 0px 1px #2AA2B8,27vw 20vh 2px 2px #2AA2B8,
+  21vw -3vh 3px 0px #2AA2B8,34vw 17vh 1px 2px #2AA2B8,-45vw -44vh 0px 1px #2AA2B8,44vw -47vh 3px 2px #2AA2B8,-29vw 11vh 2px 0px #2AA2B8,44vw -9vh 1px 1px #2AA2B8,
+  36vw -28vh 2px 3px #2AA2B8,0vw -33vh 0px 2px #2AA2B8,-12vw 1vh 2px 3px #2AA2B8,-14vw 44vh 0px 0px #2AA2B8,16vw 45vh 0px 3px #2AA2B8,10vw 6vh 1px 2px #2AA2B8,
+  -45vw -39vh 1px 0px #2AA2B8,7vw -19vh 3px 2px #2AA2B8,-8vw 0vh 1px 3px #2AA2B8,-20vw 39vh 2px 3px #2AA2B8,10vw 14vh 3px 1px #2AA2B8,43vw 35vh 2px 1px #2AA2B8,
+  -10vw -35vh 0px 1px #2AA2B8,-41vw -11vh 2px 3px #2AA2B8,49vw 42vh 3px 0px #2AA2B8,-21vw -37vh 1px 3px #2AA2B8,-14vw 24vh 1px 0px #2AA2B8,35vw 41vh 3px 1px #2AA2B8,
+  -33vw 48vh 3px 3px #2AA2B8,-19vw -35vh 3px 1px #2AA2B8,-34vw -11vh 0px 3px #2AA2B8,-47vw 40vh 0px 1px #2AA2B8,28vw 9vh 2px 2px #2AA2B8,-10vw 37vh 3px 2px #2AA2B8,
+  23vw -33vh 1px 3px #2AA2B8,-25vw -43vh 0px 0px #2AA2B8,-34vw -39vh 0px 2px #2AA2B8,-23vw 18vh 0px 0px #2AA2B8,1vw 2vh 3px 2px #2AA2B8,-43vw 30vh 2px 3px #2AA2B8,45vw 32vh 2px 3px #2AA2B8,-9vw -13vh 0px 1px #2AA2B8,41vw -10vh 3px 0px #2AA2B8,5vw -2vh 1px 3px #2AA2B8,-48vw 39vh 1px 2px #2AA2B8,-48vw 36vh 2px 0px #2AA2B8,8vw 44vh 1px 0px #2AA2B8,-22vw -1vh 3px 0px #2AA2B8,0vw 20vh 1px 0px #2AA2B8,4vw -47vh 2px 3px #2AA2B8,-50vw 22vh 1px 3px #2AA2B8,38vw -14vh 0px 1px #2AA2B8,-16vw -4vh 3px 1px #2AA2B8,-25vw 29vh 3px 0px #2AA2B8,-19vw -20vh 0px 0px #2AA2B8,23vw -7vh 1px 2px #2AA2B8,33vw -8vh 1px 2px #2AA2B8,-12vw -34vh 3px 1px #2AA2B8,-37vw 33vh 0px 1px #2AA2B8,44vw 17vh 1px 3px #2AA2B8,-40vw 24vh 3px 3px #2AA2B8,18vw 28vh 3px 1px #2AA2B8,28vw 10vh 2px 0px #2AA2B8,-28vw -17vh 2px 0px #2AA2B8,50vw -13vh 2px 3px #2AA2B8,21vw -10vh 3px 2px #2AA2B8,23vw -22vh 0px 1px #2AA2B8,46vw 39vh 0px 1px #2AA2B8,14vw -9vh 3px 3px #2AA2B8,42vw -39vh 1px 2px #2AA2B8,32vw -12vh 0px 3px #2AA2B8,-31vw 41vh 0px 2px #2AA2B8,12vw -32vh 3px 3px #2AA2B8,23vw -48vh 2px 2px #2AA2B8,9vw 9vh 0px 0px #2AA2B8,27vw -9vh 2px 1px #2AA2B8,3vw -7vh 3px 2px #2AA2B8,8vw -26vh 1px 2px #2AA2B8,18vw -28vh 0px 3px #2AA2B8,-47vw -15vh 3px 1px #2AA2B8,44vw 14vh 3px 1px #2AA2B8,44vw 47vh 3px 2px #2AA2B8,33vw 5vh 3px 1px #2AA2B8,-40vw -37vh 1px 0px #2AA2B8,-33vw -39vh 0px 1px #2AA2B8,32vw -27vh 1px 0px #2AA2B8,26vw 30vh 2px 1px #2AA2B8,-19vw 4vh 0px 0px #2AA2B8,-4vw 29vh 0px 1px #2AA2B8,35vw -15vh 0px 1px #2AA2B8,35vw 12vh 0px 2px #2AA2B8,-11vw -48vh 0px 3px #2AA2B8,46vw -17vh 0px 2px #2AA2B8,25vw -27vh 1px 2px #2AA2B8,-41vw -45vh 0px 2px #2AA2B8,-3vw 23vh 0px 1px #2AA2B8,13vw -16vh 1px 0px #2AA2B8,23vw 38vh 2px 3px #2AA2B8,22vw -3vh 2px 2px #2AA2B8,-36vw -40vh 2px 1px #2AA2B8,-28vw -48vh 1px 3px #2AA2B8,42vw 19vh 0px 0px #2AA2B8,43vw -5vh 2px 3px #2AA2B8,50vw 23vh 0px 1px #2AA2B8,48vw 9vh 1px 2px #2AA2B8,-26vw -50vh 1px 1px #2AA2B8,3vw -45vh 2px 2px #2AA2B8,-2vw 32vh 3px 3px #2AA2B8,-3vw -14vh 0px 1px #2AA2B8,41vw 47vh 1px 0px #2AA2B8,31vw -21vh 2px 2px #2AA2B8,-16vw 5vh 2px 1px #2AA2B8,-16vw 1vh 0px 3px #2AA2B8,-16vw 36vh 2px 1px #2AA2B8,32vw 25vh 2px 0px #2AA2B8,19vw -50vh 0px 2px #2AA2B8,-48vw 33vh 0px 1px #2AA2B8,-26vw -25vh 3px 0px #2AA2B8,11vw 4vh 0px 3px #2AA2B8,12vw -13vh 2px 2px #2AA2B8,38vw 39vh 1px 0px #2AA2B8,-15vw -18vh 0px 3px #2AA2B8,40vw 14vh 3px 0px #2AA2B8,47vw -49vh 3px 2px #2AA2B8,36vw 14vh 3px 1px #2AA2B8,46vw -39vh 1px 2px #2AA2B8,-18vw -13vh 0px 0px #2AA2B8,-48vw 31vh 3px 1px #2AA2B8,-44vw -16vh 0px 3px #2AA2B8,9vw 17vh 0px 1px #2AA2B8,28vw 45vh 3px 0px #2AA2B8,27vw -32vh 0px 2px #2AA2B8,15vw 22vh 3px 2px #2AA2B8;
+
+  
+  
+  
+  opacity: .07;
+  animation: zoom 15s alternate infinite;
+}
+
+@keyframes zoom {
+  0%{
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(1.2);
+  }
+}
+
+
+
+
 canvas {
     display: block;
     width: 50%;
 }
 
 
-
 hr{
-  background-color: #262626;
+  background-color: #383838;
   width: 80%;
 }
 body {
     font-family: "Vibur", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-    background: #333333;
+    background: #1a1a1a;
     color: #333333;
     margin-top: 5rem;
+
+
   }
   
-  
+.backgroundTest{
+
+  background-image: linear-gradient(to bottom, rgba(23,162,184,0.6) 60%,rgba(23,162,184,0.4) 10%), url("foo2.jpeg");
+  background-size: auto;
+
+}
   body ::-webkit-scrollbar{
     width: 0.2rem;
   }
@@ -81,7 +155,7 @@ body {
   
   
   .content-section2 {
-    background: #383838;
+    background: #1a1a1a;
     padding: 10px 20px;
     border: 2px solid #383838;
     border-radius: 7px;
@@ -331,12 +405,7 @@ body {
     width: 50%;
   
   }
-  #myEl{
-    top:50px;
-    right: 5px;
-    max-width: 100%;
-    overflow-x: hidden
-}
+
 
 
 
@@ -346,13 +415,36 @@ body {
     }
 }
 
+
+
+@media(min-width:100px){
+  #myEl{
+      margin-left:10%;
+  }
+}
+@media(min-width:800px){
+  #myEl{
+      margin-left:60%;
+  }
+}
+
+@media(min-width:1000px){
+  #myEl{
+      margin-left:50%;
+  }
+}
+@media(max-width:800px){
+  #heroText{
+      opacity: 0;
+  }
+}
+
 @media(max-width:765px){
     #foo{
       
         margin-top:650px;
     }
 }
-
 
 
 
@@ -689,14 +781,14 @@ table {
 
 }
 .flip-card .flip-card-front {
-  background: #383838;
+  background: #1a1a1a;
   border: 2px solid #383838;
   border-radius: 7px;
   color: white;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, .8);
 }
 .flip-card .flip-card-back {
-  background: #383838;
+  background: #1b1b1b;
   border: 2px solid #383838;
   border-radius: 7px;
   color: white;

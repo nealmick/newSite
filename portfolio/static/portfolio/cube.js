@@ -1,3 +1,5 @@
+
+
 let camera, scene, renderer, raycaster, controls,cub3 ;
 
 
@@ -1625,11 +1627,25 @@ async function revert(){
 
 function init() {
 	camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, .1, 10000);
-	camera.position.z = x*1.2;
-	camera.position.y = x*1.2;
-	camera.position.x = x*1.2;
+
+
+	let multiplier = 1.1
+	if(window.innerWidth<1500){
+		multiplier=1.3
+	}	
+	if(window.innerWidth<1000){
+		multiplier=1.7
+	}	
+	if(window.innerWidth<700){
+		multiplier=2
+	}
 
  
+	camera.position.z = x*multiplier;
+	camera.position.y = x*multiplier;
+	camera.position.x = x*multiplier;
+
+
 
 	raycaster = new THREE.Raycaster();
 	//create 3d cube
@@ -1664,7 +1680,7 @@ function init() {
 	});
 
 	myEl = document.getElementById('myEl');
-	renderer.setSize($(myEl).width(), $(myEl).height());
+	renderer.setSize($(myEl).width()*1, $(myEl).height()*1);
 	myEl.appendChild(renderer.domElement);
 
 	myEl2 = document.getElementById('myEl2');

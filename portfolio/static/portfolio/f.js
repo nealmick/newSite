@@ -75,3 +75,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.getElementById('flip-card6').classList.toggle('do-flip');
     };
   });
+
+
+
+
+
+
+
+
+
+
+
+
+  
