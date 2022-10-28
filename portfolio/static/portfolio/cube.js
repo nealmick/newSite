@@ -19,7 +19,7 @@ let solveDelayStep=3
 let solveDelay = .08
 let moveCount = 0
 let history = []
-let shuffleCount = 50
+let shuffleCount = 15
 let sceneRotationSpeed = 0.13
 
 let loop = true
