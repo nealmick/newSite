@@ -19,7 +19,7 @@ let solveDelay = .11
 let moveCount = 0
 let history = []
 let shuffleCount = 50
-let sceneRotationSpeed = 0.2
+let sceneRotationSpeed = 10
 
 let loop = true
 
@@ -1663,10 +1663,8 @@ function init() {
 		alpha:true
 	});
 
-
-	myEl = document.getElementById('myEl');
-	renderer.setSize($(myEl).width(), $(myEl).height());
-	myEl.appendChild(renderer.domElement);
+	renderer.setSize(window.innerWidth, window.innerHeight);
+	document.body.appendChild(renderer.domElement);
 	
 	controls = new THREE.OrbitControls( camera, renderer.domElement );
 	//document.addEventListener('click', onClick, false);
@@ -2171,7 +2169,7 @@ function createCube(faces, x,y){
 
 	stat = ('x: '+x+'  y: '+y)
 	//console.log(stat)
-	document.getElementById("cubeStat").innerText = stat
+	document.getElementById("cubestat").innerText = stat
 
 
 	let cube = [];
@@ -2592,4 +2590,3 @@ function getRandomInt(max) {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
