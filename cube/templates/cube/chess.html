@@ -17,7 +17,7 @@
 
 
 
-    <div class="zoomParticle"style="opacity:.07;z-index:-10000"></div>
+    <div class="zoomParticle"style="opacity:.2;z-index:-10000"></div>
 </div>
 </div>
 <div class="col-md-6  "style="margin-top:10vh;margin-left:auto;margin-right:auto;width:100%;">
@@ -26,20 +26,21 @@
         </div>
 
 
-    <div class="content-section2 center" style="position:relative;color:white; margin-top:25px; height: 30vh;min-width: 300px;">
+    <div class="content-section2 center" style="position:relative;color:white; margin-top:25px;min-width: 300px;">
         <center>
-        <button class="btn btn-outline-info " id="reset-btn" onclick="game = moveBack(game)">Back</button>
-        <button class="btn btn-outline-info " id="reset-btn" onclick="newGame()">Restart</button>
-        <br>
         <label>Game Status:</label>
         <div id="status"></div>
-        <label>FEN String:</label>
-        <div id="fen"stlye="overflow-wrap: normal;"></div>
+        <br>
+        <button class="btn btn-outline-info " id="reset-btn" onclick="game = moveBack(game)">Back</button>
+        <button class="btn btn-outline-info " id="reset-btn" onclick="newGame()">Restart</button>
+
+
         </center>
     </div>
 </div>
 </div>
 </div>
 <script  src="https://cdn.jsdelivr.net/gh/nealmick/site@latest/cube/static/cube/chessboard-1.0.0.js"></script>
-<script  src="https://cdn.jsdelivr.net/gh/nealmick/site@second/cube/static/cube/chess.js"></script>
+<script  src="{% static 'cube/chess.js'%}"></script>
+
 {% endblock content %}

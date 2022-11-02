@@ -98,6 +98,7 @@ const myChart = new Chart(document.getElementById('myChart'),config);
 
 
 document.body.onmousedown = function() { 
+    console.log('asdf')
     mouseDown = true;
     if (isOnDiv){
         if (lastClicked){
@@ -117,6 +118,7 @@ document.body.onmouseup = function() {
 var grid = clickableGrid(ncx-6,ncy-6,function(el,row,col,i){
     //console.log("x:",col);
     //console.log("y:",row);
+
 
 
     if (mouseDown == true){
@@ -150,6 +152,11 @@ function clickableGrid( rows, cols, callback ){
                 }
             
             })(cell,r,c,i),false);
+
+            cell.addEventListener('swiped', function(el,r,c,i) {
+                console.log(el.target); // the element that was swiped
+                console.log(el.detail.dir); // swiped direction
+            });
 
         }
     }
