@@ -10,25 +10,24 @@
 
 
 
-<link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
 
 
-<div class="zoomParticle"></div>
+<div class="zoomParticle"style="opacity: .2;z-index:-10000000;"></div>
 
 
 
 
     
-<div id="heroText"style="z-index:100000;position:absolute;height: 60vh;margin-top:30vh;">
+<div data-aos="zoom-in-up"  id="heroText" style="z-index:100;position:absolute;height: 60vh;margin-top:30vh;">
 
     <p style="font-size: 56px;color: white;text-decoration: underline;margin-bottom: 2px">Full Stack Developer</p>
     <p style="font-size: 26px;color: white;margin-bottom: 2px;">Python Java JavaScript HTML CSS</p>
     <p style="font-size: 26px;color: white;margin-bottom: 2px;">I love to learn and make new things</p>
     <p style="color: white"><a style="position: relative;"  href='#section1'class="btn btn-outline-info">Portfolio <i class="fa fa-solid fa-arrow-down"></i></a>
-    <a style="position: relative;"  href='/contact/'class="btn btn-outline-secondary">Contact <i class="fa fa-envelope"></i></a></p>
+    <a style="position: relative;"  href='/contact/'class="btn btn-outline-secondary">Hire Me <i class="fa fa-envelope"></i></a></p>
 
 </div>
-<div id="myEl"class="col-md-10"style="margin-top:17vh;width: 80%;height: 50vh; opacity: 0.75;z-index: 1000;"></div>
+<div data-aos="zoom-in-up" id="myEl"class="col-md-10"style="margin-top:17vh;width: 80%;height: 50vh; opacity: 0.75;z-index: 1000;"></div>
 
 
 <div id="section1"></div>
@@ -48,11 +47,11 @@
 
 
 </div>
-<center><h1 style="text-decoration: underline;">Portfolio</h1></center>
+<center><h1 data-aos="fade-in" style="text-decoration: underline;">Portfolio</h1></center>
 
 
 <div class="row justify-content-md-center"style="padding:0px;">
-    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+    <div data-aos="zoom-in-right" class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
         <div id="flip-card"class="flip-card">
             <div class="flip-card-front">
                 <div style="margin-top: 25px;">
@@ -80,7 +79,7 @@
                 <div style="margin-top: 15px;position: absolute;">
                     <p class="noScroll"style="padding-left: 25px;padding-right: 25px;overflow: scroll;height: 300px;">
                       
-                        Each drawing is represented as a 28 x 28 grid.  The neural network is made up of 2 fully connected layers using the rectified linear unit activation function.  The output layer is 10 softmax values representing the targets 0-9.  The model was built with PyTorch and trained on over 60,00 examples from the MNIST dataset.                    
+                        Each drawing is represented as a 28 x 28 grayscale array.  The neural network is made up of 2 fully connected layers using the ReLU activation function.  The model outputs 10 softmax values representing the targets 0-9.  The project was built with PyTorch and trained on over 60,00 examples from the MNIST dataset.                    
                       
                     </p>
                 </div>
@@ -98,7 +97,7 @@
     </div>
 
     
-    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+    <div data-aos="zoom-in-left" class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
 
         <div id="flip-card2"class="flip-card">
             <div class="flip-card-front">
@@ -164,8 +163,8 @@
 
 
 <div class="row justify-content-md-center"style="padding:0px;">
-    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
-        <div id="flip-card3"class="flip-card">
+    <div data-aos="zoom-in-right"  class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+        <div  id="flip-card3"class="flip-card">
             <div class="flip-card-front">
                 <div style="margin-top: 25px;">
                     <h2 style="text-decoration: underline;color:white">TicTacToe <i style="font-size: 0.8em;"class="fa fa-solid fa-hashtag"></i></h2>
@@ -188,7 +187,7 @@
 
                         <button id="flip-card-btn-turn-to-back3"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
 
-                        <a href="https://github.com/nealmick/NumberClassifier" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/nealmick/ttt" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
 
                     </div>
                 </div>
@@ -227,7 +226,7 @@
 
 
     
-    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+    <div data-aos="zoom-in-left" class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
 
         <div id="flip-card4"class="flip-card">
             <div class="flip-card-front">
@@ -302,8 +301,8 @@
 
 
 <div class="row justify-content-md-center"style="padding:0px;">
-    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
-        <div id="flip-card5"class="flip-card">
+    <div data-aos="zoom-in-right" class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+        <div  id="flip-card5"class="flip-card">
             <div class="flip-card-front">
                 <div style="margin-top: 25px;">
                     <h2 style="text-decoration: underline;color:white">Chess Bot <i style="font-size: 0.8em;"class="fa fa-chess-board"></i></h2>
@@ -319,7 +318,7 @@
                         </p>
                         <a href="/chess/" class="btn btn-outline-info"> Live <i class="fa fa-chess-board"></i></a>
                         <button id="flip-card-btn-turn-to-back5"class="btn btn-outline-info">About <i class="fa fa-solid fa-share"></i></button>
-                        <a href="https://github.com/nealmick/NumberClassifier" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/nealmick/chess" target="_blank" class="btn btn-outline-info">GitHub <i class="fab fa-github"></i></a>
 
 
                     </div>
@@ -352,7 +351,7 @@
     </div>
 
     
-    <div class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
+    <div data-aos="zoom-in-left" class="flip-card-3D-wrapper col-lg-5"style="height:550px;margin-top:25px;padding:0px;">
 
         <div id="flip-card6"class="flip-card">
             <div class="flip-card-front">
@@ -425,7 +424,7 @@
 
 
 
-<div id="info"class="content-section2" style="position: relative; width:90%;text-align: left; margin-top: 159px;  margin-right: auto;margin-left: auto;">
+<div data-aos="fade-in" id="info"class="content-section2" style="position: relative; width:90%;text-align: left; margin-top: 159px;  margin-right: auto;margin-left: auto;">
 
 
     <center>
@@ -434,20 +433,20 @@
     
 
     
-      <p style="color:white">					    
+      <p style="color:white">                       
          • Written thousands of lines of Python and JavaScript. Proficient in Java, C, HTML, CSS, and Bash.
       </p>
-      <p style="color:white">					    
+      <p style="color:white">                       
         • Experienced with libraries such as Django, Tensorflow, NumPy, PyTorch, Flask, Pickle and many more.
         </p>
-      <p style="color:white">					    
+      <p style="color:white">                       
          • Worked Extensively with Linux distributions such as Ubuntu, Arch, and Kali OS, run on servers from Digital Ocean, AWS, and Google Cloud Platform.
       </p>
     </div>
     <br>
     <br>
     
-    <div id="info"class="container content-section2" style="width:91%;text-align: left; margin-top: 75px;  margin-right: auto;margin-left: auto;">
+    <div data-aos="fade-in" id="info"class="container content-section2" style="width:91%;text-align: left; margin-top: 75px;  margin-right: auto;margin-left: auto;">
     
       
         <center>
@@ -475,27 +474,27 @@
     
     
     
-    <div id="info"class="container content-section2" style="text-align: left; margin-top: 50px;width: 90%;margin-left: 5%;">
+    <div data-aos="fade-in" id="info"class="container content-section2" style="text-align: left; margin-top: 50px;width: 90%;margin-left: 5%;">
     
         <div style="width: 80%;margin-left: 10%;color:white;">
             <center>
-            <h2 style="text-decoration: underline;color:white">Contact Me <i class="fa fa-envelope"></i></h2>
+            <h2 style="text-decoration: underline;color:white">Say Hello!<i class="fa fa-envelope"></i></h2> 
             </center>
             <br>
             <br>
     
             <h5 style="color:white">Subject:</h5>
-            <input style="width: 50%;border-radius: 5px;background-color: #404040;color: white;border: 2px solid #737373;"type="text" name="subject" maxlength="100" class="textinput textInput" id="id_subject" value="">
+            <input style="width: 50%;border-radius: 5px;background-color: #404040;color: white;border: 1px solid #0d6370;"type="text" name="subject" maxlength="100" class="textinput textInput" id="id_subject" value="">
             <br>
             <br>
     
             <h5 style="color:white">Email:</h5>
-            <input style="width: 50%;border-radius: 5px;background-color: #404040;border: 2px solid #737373;color: white;"type="text" name="sender" maxlength="100" class="textinput textInput" id="id_sender" value="">
+            <input style="width: 50%;border-radius: 5px;background-color: #404040;border: 1px solid #0d6370;color: white;"type="text" name="sender" maxlength="100" class="textinput textInput" id="id_sender" value="">
             <br>
             <br>
             <h5 style="color:white">Message:</h5>
     
-            <textarea style="border-radius: 5px;width: 100%;background-color: #404040;color: white;border: 2px solid #737373;"name="message" cols="30" rows="10" maxlength="1499" class="textarea" id="id_message"></textarea>
+            <textarea style="border-radius: 5px;width: 100%;background-color: #404040;color: white;border: 1px solid #0d6370;"name="message" cols="30" rows="10" maxlength="1499" class="textarea" id="id_message"></textarea>
             <br>
             <h1 ></h1>
             <center>
@@ -522,16 +521,15 @@
     
     
     
-      <div id="info" class="content-section2"style="width:90%;text-align: left; margin-top: 75px;  margin-right: auto;margin-left: auto;">
+      <div data-aos="fade-in" id="info" class="content-section2"style="width:90%;text-align: left; margin-top: 75px;  margin-right: auto;margin-left: auto;">
         <center>
               <!--
               <a href="{% url 'resume' %}" class="btn btn-outline-info"><i class="far fa-address-card"></i></a>
       
               <a href="https://docs.google.com/document/d/1VmPo1DhGabotE-iPHQo4Smfxps2xDJPFB1t4InSt5jY/edit?usp=sharing" class="btn btn-outline-info"><i class="fas fa-download"></i></a>
               -->
-              <sp>
-                  <p> </p>
-              </sp>
+
+
               <a href="{% url 'resume' %}" class="btn btn-outline-info"><i class="far fa-address-card"></i></a>
               <a href="/nc/" class="btn btn-outline-info"><i class="fa fa-solid fa-feather"></i></a>
       
@@ -544,6 +542,13 @@
       
       
               <a href="https://github.com/nealmick" target="_blank" class="btn btn-outline-info"><i class="fab fa-github"></i></a>
+
+
+              <br>
+              <hr>
+              <sp>
+                <p id="goodDay"></p>
+              </sp>
             </center>
         </div>
         <div class="" style="margin-top: 150px;"></div>
@@ -557,7 +562,18 @@
 
 
 
+<script type="text/javascript">
+    msg = 'Have '
+    const goodDayWords = ['a fantastic','a wonderfull','a lovely','a good','an amazing','an astounding']
+    word = goodDayWords[Math.floor(Math.random() * 6)]
 
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    const ddate = new Date();
+    let day = weekday[ddate.getDay()];
+    gdel = document.getElementById('goodDay').innerText=msg+word+' '+day+'!';
+
+</script>
 
 
 
@@ -571,11 +587,12 @@
 <script  src="https://cdn.jsdelivr.net/gh/nealmick/site@latest/cube/static/cube/chessboard-1.0.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
 
-
 <script  src="{% static 'portfolio/chess.js'%}"></script>
 <script  src="{% static 'portfolio/contactForm.js'%}"></script>
 <script  src="{% static 'portfolio/cube.js'%}"></script>
 <script  src="{% static 'portfolio/f.js'%}"></script>
 <script  src="{% static 'portfolio/ncIndex.js'%}"></script>
+
+
 
 {% endblock content %}

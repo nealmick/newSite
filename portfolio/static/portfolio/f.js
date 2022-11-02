@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', function(event) {
 
     document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';

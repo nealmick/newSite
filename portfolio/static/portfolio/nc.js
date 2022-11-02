@@ -139,6 +139,7 @@ d.appendChild(grid);
 function clickableGrid( rows, cols, callback ){
     var i=0;
     var grid = document.createElement('table');
+    
     grid.className = 'grid';
     for (var r=0;r<rows;++r){
         var tr = grid.appendChild(document.createElement('tr'));
@@ -152,6 +153,7 @@ function clickableGrid( rows, cols, callback ){
                 }
             
             })(cell,r,c,i),false);
+
 
         }
     }
@@ -306,12 +308,6 @@ function getNumber(number,res,myChart){
         return number
 
 }
-
-
-
-
-
-
 
 
 

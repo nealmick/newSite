@@ -65,8 +65,10 @@
   0%{
       transform: scale(1);
   }
+
+
   100%{
-      transform: scale(1.2);
+      transform: scale(1.5);
   }
 }
 
@@ -175,11 +177,14 @@ body {
   
   .content-section2 {
     background: #212121;
-    padding: 10px 20px;
-    border: 2px solid #383838;
+    border: 1px solid #0d6370;
     border-radius: 7px;
     color: white;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, .8);
+
+    background: #212121;
+    padding: 10px 20px;
+
     padding: 20px;
     margin-left:5px;
     margin-right:5px;
@@ -444,7 +449,7 @@ body {
 }
 @media(min-width:800px){
   #myEl{
-      margin-left:60%;
+      margin-left:62%;
   }
 }
 
@@ -807,14 +812,14 @@ table {
 }
 .flip-card .flip-card-front {
   background: #212121;
-  border: 2px solid #383838;
+  border: 1px solid #0d6370;
   border-radius: 7px;
   color: white;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, .8);
 }
 .flip-card .flip-card-back {
   background: #212121;
-  border: 2px solid #383838;
+  border: 1px solid #0d6370;
   border-radius: 7px;
   color: white;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, .8);
